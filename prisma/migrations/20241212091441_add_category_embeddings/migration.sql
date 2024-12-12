@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Category" ADD COLUMN     "embedding" DOUBLE PRECISION[] DEFAULT ARRAY[]::DOUBLE PRECISION[];
