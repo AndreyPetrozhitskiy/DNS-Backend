@@ -22,4 +22,9 @@ export class ProductsController {
   getProductsByCategoryId(@Param('categoryId') categoryId: string) {
     return this.productsService.getProductsByCategoryId(Number(categoryId));
   }
+
+  @Get('random')
+  async getRandomProducts() {
+    return this.productsService.getRandomProducts(5); // 5 — количество товаров
+  }
 }
